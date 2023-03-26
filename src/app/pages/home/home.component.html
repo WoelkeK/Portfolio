@@ -14,25 +14,247 @@
         possimus similique repudiandae perferendis molestias, porro error quae
         saepe, numquam delectus.
       </p>
-      <a href="#" [hidden]="readmore" (click)="readmore = true">Read more</a>
+      <a href="#" [hidden]="readmore" (click)="readmore = !readmore"
+        >Read more</a
+      >
+
+      <p *ngIf="readmore">
+        Odit quae temporibus, doloribus optio tenetur minima? Voluptatum tempore
+        error nisi, quos dolorum velit, ducimus commodi quasi inventore, rerum
+        labore incidunt modi?
+      </p>
+
       <p [hidden]="!readmore">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum vero
-        ullam inventore amet! Perferendis eum repellendus numquam accusantium
-        cupiditate cumque necessitatibus ad beatae. Officiis quos porro, sequi
-        et illo deserunt.
+        Dolorum vero ullam inventore amet! Perferendis eum repellendus numquam
+        accusantium cupiditate cumque necessitatibus ad beatae. Officiis quos
+        porro, sequi et illo deserunt.
       </p>
     </div>
     <div class="col">
-      <app-progressbar value="25" label="angular" statusbar="success" striped ></app-progressbar>
-      <app-progressbar value="35" label="css" statusbar="warning" striped></app-progressbar>
-      <app-progressbar value="45" label="html" statusbar="danger" striped></app-progressbar>
-      <app-progressbar value="45" label="Overal" statusbar="info" striped></app-progressbar>
+      <app-progressbar
+        value="25"
+        label="angular"
+        statusbar="success"
+        striped
+      ></app-progressbar>
+      <app-progressbar
+        value="35"
+        label="css"
+        statusbar="warning"
+        striped
+      ></app-progressbar>
+      <app-progressbar
+        value="45"
+        label="html"
+        statusbar="danger"
+        striped
+      ></app-progressbar>
+      <app-progressbar
+        value="45"
+        label="Overal"
+        statusbar="info"
+        striped
+      ></app-progressbar>
     </div>
   </div>
 </div>
+
+<div class="container">
+  <h2 class="mt-4 text-center">What I do</h2>
+  <hr />
+  <div class="row py-4">
+    <div class="col-md-6 col-12 p2">
+      <!--  -->
+      <div class="nav flex-column nav-pills text-lg-right">
+        <a
+          href="javascript:"
+          class="nav-link"
+          (click)="currentTab = 'marketing'"
+          >Marketing and sales langing pages
+        </a>
+        <a href="javascript:" class="nav-link" (click)="currentTab = 'mobile'"
+          >Mobile Applications
+        </a>
+        <a href="javascript:" class="nav-link" (click)="currentTab = 'websites'"
+          >Websites with CMS</a
+        >
+        <a href="javascript:" class="nav-link" (click)="currentTab = 'web'"
+          >Web Applications
+        </a>
+      </div>
+      <!--  -->
+    </div>
+    <div class="col-md-6 col-12 pb-2 order-first order-lg-last">
+      <div class="d-flex flex-column h-100" [ngSwitch]="currentTab">
+        <div class="my-auto" *ngSwitchDefault>
+          <h3>I offer a variety of quality services</h3>
+          <p>&laquo; Please select option to learn more</p>
+        </div>
+
+        <div *ngSwitchCase="'marketing'">
+          <p>
+            <strong>Marketing and sales langing pages</strong> Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Debitis, quaerat assumenda!
+            Dolorem, accusantium. Eaque ipsa veniam ducimus nisi animi
+            perferendis ex sint dolor impedit, dolores ullam eius, mollitia
+            accusantium corrupti.
+          </p>
+        </div>
+        <div *ngSwitchCase="'mobile'">
+          <p>
+            <strong>Mobile Applications</strong> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Debitis, quaerat assumenda! Dolorem,
+            accusantium. Eaque ipsa veniam ducimus nisi animi perferendis ex
+            sint dolor impedit, dolores ullam eius, mollitia accusantium
+            corrupti.
+          </p>
+        </div>
+        <div *ngSwitchCase="'websites'">
+          <p>
+            <strong>Websites with CMS</strong> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Debitis, quaerat assumenda! Dolorem,
+            accusantium. Eaque ipsa veniam ducimus nisi animi perferendis ex
+            sint dolor impedit, dolores ullam eius, mollitia accusantium
+            corrupti.
+          </p>
+        </div>
+        <div *ngSwitchCase="'web'">
+          <p>
+            <strong>Web Applications</strong> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Debitis, quaerat assumenda! Dolorem,
+            accusantium. Eaque ipsa veniam ducimus nisi animi perferendis ex
+            sint dolor impedit, dolores ullam eius, mollitia accusantium
+            corrupti.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- My experience -->
+<div class="container">
+  <div class="row py-4">
+    <div class="col-md-6 col-12 p-2">
+      <h3>My experience</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempora nesciunt cum accusamus
+      praesentium quos, dolore dicta animi deserunt doloribus neque ex iusto esse assumenda excepturi vitae aut nihil
+      quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempora nesciunt cum accusamus
+      praesentium quos, dolore dicta animi deserunt doloribus neque ex iusto esse assumenda excepturi vitae aut nihil
+      quidem
+    </div>
+    <div class="col-md-6 col-12 p-2">
+      <h3>My skills</h3>
+      <p>
+        Dolor tempora nesciunt cum accusamus praesentium quos, dolore dicta animi deserunt doloribus neque ex iusto esse
+        assumenda excepturi vitae aut nihil
+        quidem</p>
+      <ul>
+        <li>
+          Odit veritatis harum veniam magni accusamus laborum laudantium dolorum tempore ullam esse sequi
+          dicta ab
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </li>
+        <li> Odio, vero! </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--  My Work In Numbers-->
+<div class="container">
+  <h2 class="mt-4 text-center">My Work In Numbers</h2>
+  <hr>
+  <div class="d-flex flex-column flex-md-row justify-content-around pb-5">
+
+    <app-counter label="Clients" [value]="411"></app-counter>
+    <app-counter label="Coffes" [value]="300"></app-counter>
+    <app-counter label="Lines of Code" [value]="12670"></app-counter>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <app-herobar>
   <blockquote class="blockquote text-white">
     <h4>"Such a quote... much motivational"</h4>
     <footer class="blockquote-footer text-white">Someone famous</footer>
   </blockquote>
 </app-herobar>
+
+<div class="container ">
+  <h2 class="mt-4 text-center ">My Recent projects</h2>
+  <hr>
+  <div class="row py-4">
+
+    <!-- <ng-template ngFor let-project="$implicit" [ngForOf]="recentProjects" let-last="last" let-first="first">
+    </ng-template> -->
+
+      <div class="col"
+        *ngFor="let project of recentProjects; let isLast = last; let isFirst = first; index as i"
+        [ngClass]="{ firstProject: isLast == true, lastProject: isLast==true}">
+        <div class="card">
+          <img class="img-fluid" [src]="project.image">
+          <div class="card-body text-center ">
+            <h5 class="card-title">{{i+1}}. {{ project.name }}</h5>
+            <button class="btn btn-link">Read more</button>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+  <!-- <div class="text-center pb-5 display-3">
+    <a href="javascript:;" class="btn btn-link">&raquo; Show more projects &laquo;</a>
+  </div> -->
+</div>
+
+
+<!-- Testimonials  -->
+<div class="container">
+  <h2 class="mt-4 text-center">What My Clients Say</h2>
+  <hr>
+  <div class="row py-4">
+    <div class="col py-2 px-4">
+      <app-testimonial *ngFor="let testimonial of testimonials">
+
+        <ng-container ngProjectAs="author">{{testimonial.author}}</ng-container>
+        <ng-container ngProjectAs="title">{{testimonial.title}}</ng-container>
+
+        <p>{{testimonial.content}}</p>
+
+        <app-avatar ngProjectAs="avatar" [image]="testimonial.image"></app-avatar>
+        <app-rating *ngIf="testimonial.rating"
+        ngProjectAs= "rating" [rating]="testimonial.rating"></app-rating>
+
+
+
+      </app-testimonial>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light">
+  <div class="container">
+    <div class="row py-4">
+      <div class="col">
+        <h3>Angular Agency Website</h3>
+        <p>Copyright Eduweb</p>
+      </div>
+    </div>
+  </div>
+</footer>

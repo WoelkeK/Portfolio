@@ -1,0 +1,17 @@
+<div class="text-center">
+  <div class="display-6 w-100" style="white-space: nowrap">
+    <span>
+      <tm-ng-odometer
+        [number]="value"
+        [config]="{
+          animation: 'slide',
+          format: 'd',
+          theme: 'car',
+          value: 0,
+          auto: true
+        }"
+      ></tm-ng-odometer>
+    </span>
+  </div>
+  <strong>{{ label }}</strong>
+</div>
