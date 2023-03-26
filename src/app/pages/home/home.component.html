@@ -6,18 +6,33 @@
   <h4 class="pt-4">Welcome to my Web Portfolio</h4>
 </app-herobar>
 <div class="container">
-  <div class ="row">
+  <div class="row">
     <div class="col">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laboriosam, aliquam quaerat obcaecati eos dolorum minus at omnis facilis possimus similique repudiandae perferendis molestias, porro error quae saepe, numquam delectus.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+        laboriosam, aliquam quaerat obcaecati eos dolorum minus at omnis facilis
+        possimus similique repudiandae perferendis molestias, porro error quae
+        saepe, numquam delectus.
+      </p>
       <a href="#" [hidden]="readmore" (click)="readmore = true">Read more</a>
       <p [hidden]="!readmore">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum vero ullam inventore amet! Perferendis eum repellendus numquam accusantium cupiditate cumque necessitatibus ad beatae. Officiis quos porro, sequi et illo deserunt.</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum vero
+        ullam inventore amet! Perferendis eum repellendus numquam accusantium
+        cupiditate cumque necessitatibus ad beatae. Officiis quos porro, sequi
+        et illo deserunt.
+      </p>
+    </div>
+    <div class="col">
+      <app-progressbar value="25" label="angular" statusbar="success" striped ></app-progressbar>
+      <app-progressbar value="35" label="css" statusbar="warning" striped></app-progressbar>
+      <app-progressbar value="45" label="html" statusbar="danger" striped></app-progressbar>
+      <app-progressbar value="45" label="Overal" statusbar="info" striped></app-progressbar>
     </div>
   </div>
 </div>
 <app-herobar>
   <blockquote class="blockquote text-white">
     <h4>"Such a quote... much motivational"</h4>
-    <footer class="blockquote-footer  text-white">Someone famous</footer>
+    <footer class="blockquote-footer text-white">Someone famous</footer>
   </blockquote>
 </app-herobar>
