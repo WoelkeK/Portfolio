@@ -1,1 +1,23 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+
+<app-herobar class="main-header">
+  <h2 class="display-3">Angular Agency</h2>
+  <h4 class="pt-4">Hi, I am Matt! I am a Angular developer</h4>
+  <h4 class="pt-4">Welcome to my Web Portfolio</h4>
+</app-herobar>
+<div class="container">
+  <div class ="row">
+    <div class="col">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laboriosam, aliquam quaerat obcaecati eos dolorum minus at omnis facilis possimus similique repudiandae perferendis molestias, porro error quae saepe, numquam delectus.</p>
+      <a href="#" [hidden]="readmore" (click)="readmore = true">Read more</a>
+      <p [hidden]="!readmore">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum vero ullam inventore amet! Perferendis eum repellendus numquam accusantium cupiditate cumque necessitatibus ad beatae. Officiis quos porro, sequi et illo deserunt.</p>
+    </div>
+  </div>
+</div>
+<app-herobar>
+  <blockquote class="blockquote text-white">
+    <h4>"Such a quote... much motivational"</h4>
+    <footer class="blockquote-footer  text-white">Someone famous</footer>
+  </blockquote>
+</app-herobar>

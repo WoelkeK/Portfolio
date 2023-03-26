@@ -9,6 +9,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HerobarComponent } from './components/herobar/herobar.component';
+import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HerobarComponent } from './components/herobar/herobar.component';
     ProjectsComponent,
     AboutComponent,
     NavbarComponent,
-    HerobarComponent
+    HerobarComponent,
+    ProgressbarComponent
   ],
   imports: [
     BrowserModule,
